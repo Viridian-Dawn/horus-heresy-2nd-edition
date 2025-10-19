@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="129" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="130" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -31,6 +31,7 @@
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
     <publication name="Legion Tarantula Sentry Gun Battery" id="5b2d-881e-a870-a7d1" hidden="false" publisherUrl="https://assets.warhammer-community.com/eng_jun25_thehorusheresy_additionalrules_tarantula-nq1r50lr4a-ec6sail0d9.pdf" publicationDate="June 2025"/>
+    <publication name="Viridian&apos;s Horus Heresy 2.0 Saturnine Addition" id="362e-0e76-ce51-c905" hidden="false"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -11094,6 +11095,401 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7a95-02fd-993d-54ed" name="Heavy Plasma Bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="4b89-c5b8-e697-bfad" name="Heavy Plasma Bombard - (Maximal Fire)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d698-9be3-6bb6-3edf" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa7-01c4-7a9f-1c0c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a8aa-6677-aecb-d334" name="Heavy Plasma Bombard - (Maximal Fire)" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Breaching (4+), Gets Hot</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" id="9a4d-b432-2ef3-0980" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+            <infoLink name="Breaching (X)" id="78ac-ea06-9724-832a" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink name="Barrage" id="5e7d-fb74-8c5a-eb54" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+            <infoLink name="Gets Hot" id="1aba-9348-9280-ac0b" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f972-72b4-ed12-d33f" name="Heavy Plasma Bombard - (Sustained Fire)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6803-b617-f61c-21dd" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd6-2c59-5fba-0f3e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e411-7f46-c68b-eafc" name="Heavy Plasma Bombard - (Sustained Fire)" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (4+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="57f3-cc9b-f00b-d8ad" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8876-43f1-7a4d-8195" name="Plasma Bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="0fd1-4d5e-aa19-6ead" name="Plasma Bombard - (Maximal Fire)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0007-e274-c613-9fc8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eff-0183-bb98-d55b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c0c9-5c75-5556-0af9" name="Plasma Bombard - (Maximal Fire)" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="362e-0e76-ce51-c905">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Breaching (4+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" id="9e92-2a8b-68b2-23ba" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+            <infoLink name="Breaching (X)" id="f0cf-e748-9fee-6495" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink name="Barrage" id="af90-dd32-ef74-1f3d" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+            <infoLink name="Gets Hot" id="ea65-0465-868b-31b7" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="82ae-f29b-b8da-54f6" name="Plasma Bombard - (Sustained Fire)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1397-2b48-a1b9-cdda" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ac-ba3a-3ab6-1fad" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c9a7-e6ad-8f5c-4adc" name="Plasma Bombard - (Sustained Fire)" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="362e-0e76-ce51-c905">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Breaching (4+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9e94-8b0f-83b8-8f74" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7986-dcaf-35e1-6404" name="Saturnine War Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b27f-4702-5b6a-9775" name="Saturine War Axe" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (2), Murderous Strike (6+), Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c8a9-6902-abc3-fd93" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="6205-f404-e729-f9fb" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule"/>
+        <infoLink id="4f31-4911-b77c-0363" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="90b9-a836-f9d4-5cf0" name="Saturine Disruption Fist" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2a3e-0dda-aebc-6df7" name="Saturnine Disruption Fist" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Unwieldy, Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d57f-a624-db82-2370" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="9314-8d91-0317-c21c" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule"/>
+        <infoLink id="7e6c-d668-64f3-711b" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="883e-514a-bf0d-579b" name="Saturnine Concussion Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="527a-55bb-03c3-73ae" name="Saturnine Concussion Hammer" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Concussive (1), Unweildy, Two-Handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="da04-36d0-6b84-a60b" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule"/>
+        <infoLink id="c89e-a1f7-5aed-e85a" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" value="Concussive (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5300-6bc8-19b2-4360" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="1ac0-bf8c-25dd-dfe9" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2c94-9ae0-5fd2-9a28" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry id="4751-19e1-b753-2e95" name="Inversion Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3cf6-4abb-6c61-a709" name="Inversion Beamer (1)" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Less than 15&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="267d-ccbe-ed1d-0b55" name="Inversion Beamer (2)" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;-30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4eb1-6aaf-17a6-a328" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="a145-0d23-50f0-6e92" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf3e-8b02-3d2b-8b48" name="Particle Shredder" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6729-0a69-5f01-288e" name="Particle Shredder" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2198-3d2b-3925-2f0a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5a1-f23d-b41a-8f0a" name="Heavy Particle Shredder" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fda4-2f04-8911-d92f" name="Heavy Particle Shredder" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="362e-0e76-ce51-c905">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a48d-712f-db46-5bce" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af7f-6eba-80ee-df97" name="Concussive Resonator" hidden="false" collective="false" import="true" type="upgrade" publicationId="362e-0e76-ce51-c905">
+      <profiles>
+        <profile id="8f83-9dc4-990a-2a7e" name="Concussive Resonator" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="362e-0e76-ce51-c905">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1eeb-9769-9e22-762d" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2493-8595-543a-9a2b" name="Photonic Incinerator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e9c0-9a5f-d3ba-57e5" name="Photonic Incinerator" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="362e-0e76-ce51-c905">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a496-62ff-89cb-ab36" name="Graviton Pulveriser" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1c54-f1d7-7469-34fb" name="Graviton Pulveriser" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;),  †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f72b-178a-9fab-ebf5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="7c89-37a8-c76d-7b7c" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
+        <infoLink id="d230-cfb6-8162-33df" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
+        <infoLink id="b185-2a5b-1bf9-d49a" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" value="Concussive (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="43f8-241e-5dd1-dfbc" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5649-d342-6af8-cf0c" name="Twin Heavy Disintegrator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1f6c-0d62-a211-1b56" name="Twin Heavy Disintegrator" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Gets Hot, Instant Death, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4a97-1613-bd9b-bfbe" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="4af6-320d-239b-f283" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="0016-6f26-e454-e4cf" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ceb6-d828-9871-14af" name="Disintegrator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1ce3-c4b8-93bf-6b35" name="Disintegrator Cannon" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Gets Hot, Instant Death, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="38bf-0c0a-d05f-8426" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="9ec2-d576-c32c-c1cd" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="a431-ce82-d55e-57c2" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f28e-e9c1-6d12-fe39" name="Occullix Targeting Auspex" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f6ee-a937-3692-4009" name="Occullix Targeting Auspex" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Firing Protocols (X)" id="d856-6516-5ae8-5bbf" hidden="false" targetId="32a3-f599-5c92-2945" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="583f-2f8b-8178-e7dd" name="Thermal Diffraction Field" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6455-fa9c-85fa-1bf1" name="Thermal Diffraction Field" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with a thermal diffraction field is selected as a target of a Shooting Attack, subtract 1 from the Wound roll to  a maximum of a 6+ against plasma, flamer, melta, volkite, and disintegrator weapons. Additionally, a Model with a thermal diffraction field gains a 5+ Feel No Pain against Wounds inflicted by the Gets Hot Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain (X)" id="04e4-72bb-2b3e-c246" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f710-ab5a-5ba9-02b7" name="Saturnine Teleportation Transponder" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2178-ec6a-1220-9575" name="Saturnine Teleportation Transponder" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a saturnine teleportation transponder has the Deep Strike Special Rule. If a model with a saturnine teleportation transponder has joined a unit in reserves that is equipped with legion saturnine terminator amour, that unit also gains the Deep Strike Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="f3ca-2a90-af02-10a9" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -18247,6 +18643,11 @@ Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Ai
         <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
         <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
         <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e37-8efa-d421-2c05" name="Saturnine Terminator Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="362e-0e76-ce51-c905">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Saturnine Terminator armour confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, a unit that includes any models with Saturnine Terminator armour may not make Sweeping Advances.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
