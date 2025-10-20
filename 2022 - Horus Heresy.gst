@@ -11207,16 +11207,8 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       </profiles>
       <infoLinks>
         <infoLink id="c8a9-6902-abc3-fd93" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-        <infoLink id="6205-f404-e729-f9fb" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
-          <modifiers>
-            <modifier type="set" value="Reaping Blow (2)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4f31-4911-b77c-0363" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-          <modifiers>
-            <modifier type="set" value="Murderous Strike (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="6205-f404-e729-f9fb" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule"/>
+        <infoLink id="4f31-4911-b77c-0363" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11449,16 +11441,12 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="f6ee-a937-3692-4009" name="Occulix Targeting Auspex" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) special rule until the Shooting Attack is fully resolved.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Firing Protocols (X)" id="d856-6516-5ae8-5bbf" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
-          <modifiers>
-            <modifier type="set" value="Firing Protocols (2)" field="name"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Firing Protocols (X)" id="d856-6516-5ae8-5bbf" hidden="false" targetId="32a3-f599-5c92-2945" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11472,10 +11460,13 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="6455-fa9c-85fa-1bf1" name="Thermal Diffraction Field" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with a thermal diffraction field is selected as a target of a Shooting Attack, subtract 1 from the Wound roll to  a maximum of a 6+ against plasma, flamer, melta, volkite, and disintegrator weapons. Additionally, a Model with a thermal diffraction field gains the Feel No Pain (5+) special rule against Wounds inflicted by the Gets Hot special rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with a thermal diffraction field is selected as a target of a Shooting Attack, subtract 1 from the Wound roll to  a maximum of a 6+ against plasma, flamer, melta, volkite, and disintegrator weapons. Additionally, a Model with a thermal diffraction field gains a 5+ Feel No Pain against Wounds inflicted by the Gets Hot Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain (X)" id="04e4-72bb-2b3e-c246" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -11488,13 +11479,55 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="2178-ec6a-1220-9575" name="Saturnine Teleportation Transponder" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a saturnine teleportation transponder has the Deep Strike special rule. If a model with a saturnine teleportation transponder has joined a unit in reserves that is equipped with legion saturnine terminator amour, that unit also gains the Deep Strike special rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a saturnine teleportation transponder has the Deep Strike Special Rule. If a model with a saturnine teleportation transponder has joined a unit in reserves that is equipped with legion saturnine terminator amour, that unit also gains the Deep Strike Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" id="f3ca-2a90-af02-10a9" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ba4-0977-3d11-d3a8" name="Twin Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5b4d-d2a5-2011-4105" name="Twin Accelerator Autcannon" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;
+</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Exoshock (6+), Rending (5+), Skyfire, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7634-11ee-bc65-982f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6597-1600-2fca-9ffd" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9ff2-9878-4f50-9498" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="d1e1-2d02-d8c0-f674" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc8f-4544-dd6c-3434" name="Atomantic Pavise" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c601-8f05-b900-3948" name="Atomantic Pavise" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models wholly within 3&quot; of this Model have a 5+ Invulnerable Save against Shooting Attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
