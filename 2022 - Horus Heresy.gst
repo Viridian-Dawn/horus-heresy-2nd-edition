@@ -11207,8 +11207,16 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       </profiles>
       <infoLinks>
         <infoLink id="c8a9-6902-abc3-fd93" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-        <infoLink id="6205-f404-e729-f9fb" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule"/>
-        <infoLink id="4f31-4911-b77c-0363" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
+        <infoLink id="6205-f404-e729-f9fb" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+          <modifiers>
+            <modifier type="set" value="Reaping Blow (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4f31-4911-b77c-0363" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11441,12 +11449,16 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="f6ee-a937-3692-4009" name="Occulix Targeting Auspex" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) special rule until the Shooting Attack is fully resolved.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Firing Protocols (X)" id="d856-6516-5ae8-5bbf" hidden="false" targetId="32a3-f599-5c92-2945" type="rule"/>
+        <infoLink name="Firing Protocols (X)" id="d856-6516-5ae8-5bbf" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" value="Firing Protocols (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11460,13 +11472,10 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="6455-fa9c-85fa-1bf1" name="Thermal Diffraction Field" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with a thermal diffraction field is selected as a target of a Shooting Attack, subtract 1 from the Wound roll to  a maximum of a 6+ against plasma, flamer, melta, volkite, and disintegrator weapons. Additionally, a Model with a thermal diffraction field gains a 5+ Feel No Pain against Wounds inflicted by the Gets Hot Special Rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with a thermal diffraction field is selected as a target of a Shooting Attack, subtract 1 from the Wound roll to  a maximum of a 6+ against plasma, flamer, melta, volkite, and disintegrator weapons. Additionally, a Model with a thermal diffraction field gains the Feel No Pain (5+) special rule against Wounds inflicted by the Gets Hot special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Feel No Pain (X)" id="04e4-72bb-2b3e-c246" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -11479,7 +11488,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="2178-ec6a-1220-9575" name="Saturnine Teleportation Transponder" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a saturnine teleportation transponder has the Deep Strike Special Rule. If a model with a saturnine teleportation transponder has joined a unit in reserves that is equipped with legion saturnine terminator amour, that unit also gains the Deep Strike Special Rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a saturnine teleportation transponder has the Deep Strike special rule. If a model with a saturnine teleportation transponder has joined a unit in reserves that is equipped with legion saturnine terminator amour, that unit also gains the Deep Strike special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
