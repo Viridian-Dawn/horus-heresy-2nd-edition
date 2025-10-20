@@ -18,7 +18,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Command Squad, Cataphractii" hidden="false" id="6177-bfc6-57be-9f73" collective="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+        <entryLink import="true" name="Command Squad, Saturnine" hidden="false" id="6177-bfc6-57be-9f73" collective="false" targetId="bfb9-7c5c-a0c2-24b3" type="selectionEntry">
           <modifiers>
             <modifier type="append" value="(Reserve Only)" field="name">
               <conditions>
@@ -2038,7 +2038,7 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         <categoryLink name="Compulsory Heavy Support:" hidden="false" id="0915-0f77-7ebd-1c47" targetId="030f-3801-4f54-e7f8" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Centurion, Cataphractii" hidden="false" id="4f01-69eb-fdc7-20ea" collective="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
+    <entryLink import="false" name="Centurion, Saturnine" hidden="false" id="4f01-69eb-fdc7-20ea" collective="false" targetId="d677-180a-100f-4385" type="selectionEntry">
       <comment>template_id_11b1-c617-441a-9f1a</comment>
       <modifiers>
         <modifier type="append" value="(Reserve Only)" field="name">
@@ -2065,7 +2065,7 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink import="false" name="Praetor, Cataphractii" hidden="false" id="9702-5c6b-d0f2-0a53" collective="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
+    <entryLink import="false" name="Praetor, Saturnine" hidden="false" id="9702-5c6b-d0f2-0a53" collective="false" targetId="2c94-9ae0-5fd2-9a28" type="selectionEntry">
       <comment>template_id_ca44-db38-4377-b4ef</comment>
       <categoryLinks>
         <categoryLink name="HQ:" hidden="false" id="e207-b342-2c86-3ce0" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -2077,11 +2077,80 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         <entryLink import="true" name="Retinue" hidden="false" id="75ec-7875-b7b2-c3cb" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="false" name="Terminator Cataphractii Squad" hidden="false" id="d606-cd8b-73e9-942b" collective="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="d606-cd8b-73e9-942b" collective="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
       <comment>template_id_ec78-3ba9-438b-a7e8</comment>
       <categoryLinks>
         <categoryLink name="Elites:" hidden="false" id="f6cd-9706-460e-7cf9" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="7f12-b02e-b2fa-0ab5" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Quad Araknae Accelerator Platform" hidden="false" id="83a5-683a-5a46-d767" collective="false" targetId="5bf3-b684-9649-4deb" type="selectionEntry">
+      <comment>template_id_16af-605d-4499-bb17</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>node_id_c28f-4109-44c4-ab64</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_fdc1-a894-48bc-9e7c</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="f364-29d9-b5c0-89c1" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="2f6f-b638-ea3a-ff74" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Augmetic Transport Bay" id="2dd3-0462-7745-27fe" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="true" id="4533-1a8d-3e3c-04c5" collective="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_47ce-b432-4b4a-98da</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06cc-c559-d71e-b75e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="2cf9-1d61-c79a-0672" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="902c-2271-482f-6690" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Terminator Cataphractii Squad" hidden="true" id="85af-a1c7-d8ed-62dd" collective="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+      <comment>template_id_47ce-b432-4b4a-98da</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06cc-c559-d71e-b75e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="fc93-a28d-0a93-50e2" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="2a07-9f7a-3b56-f7e9" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
