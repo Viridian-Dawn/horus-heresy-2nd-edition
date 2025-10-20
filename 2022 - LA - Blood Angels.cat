@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="53" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="54" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -908,7 +908,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0a22-74ff-cd0e-cdad" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+    <entryLink id="0a22-74ff-cd0e-cdad" name="Saturnine Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <comment>template_id_904a-21a0-43c7-a61c</comment>
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
@@ -3056,6 +3056,127 @@
     <entryLink import="true" name="Sanguinary Guard Squad" hidden="false" id="f77b-33c7-0dfb-6584" type="selectionEntry" targetId="a333-6047-45c7-8556">
       <categoryLinks>
         <categoryLink name="HQ:" hidden="false" id="62af-0ba7-ecff-c4b6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b4a8-a17e-d7d0-54d6" name="Terminator Saturnine Squad" hidden="true" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_47ce-b432-4b4a-98da</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_eafb-5453-4dd9-8623</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_41ad-3585-4031-9b76</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4e4f-169a-981b-4203" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
+          <comment>template_id_3129-6f59-4365-906b</comment>
+        </categoryLink>
+        <categoryLink id="5f6b-870f-5eff-a05a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_2bcb-0af1-4aea-9191</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f318-6af9-a84c-d472" name="Centurion, Saturnine" hidden="false" collective="false" import="false" targetId="d677-180a-100f-4385" type="selectionEntry">
+      <comment>template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="969b-fe68-c1f5-4010" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_bd6a-0cda-4e0f-80ae</comment>
+        </categoryLink>
+        <categoryLink id="cf84-f734-b8f7-78ab" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_ae75-7cca-4701-9d56</comment>
+        </categoryLink>
+        <categoryLink id="d327-4269-30a4-a892" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <comment>template_id_e517-62d4-48f7-8174</comment>
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="56c7-26e1-1df6-8d0f" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
+          <comment>template_id_fafb-6414-474a-8a09    template_targetId_7dee-602c-4b47-be09</comment>
+        </entryLink>
+        <entryLink id="8847-9018-5c43-785b" name="Retinue" hidden="false" collective="false" import="true" targetId="6307-ed53-0ac4-0212" type="selectionEntryGroup">
+          <comment>template_id_a6a6-9bc7-4d4e-86a7    template_targetId_be38-a066-4f8e-ae54</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <comment>node_id_1e43-c980-4508-8ec2</comment>
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                  <comment>node_id_4140-36a7-4203-b5e9</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="43fb-5dfd-7753-a6c5" name="Praetor, Saturnine" hidden="false" collective="false" import="false" targetId="2c94-9ae0-5fd2-9a28" type="selectionEntry">
+      <comment>template_id_ca44-db38-4377-b4ef</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_54a4-6ec8-4c61-9c3e</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_f7fd-2d16-4603-a065</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7341-9ed2-a1c0-b9d7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_c0ac-4b8c-421c-a21b</comment>
+        </categoryLink>
+        <categoryLink id="ca86-f6e5-c956-d3e1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_8db9-079e-4482-b200</comment>
+        </categoryLink>
+        <categoryLink id="6af8-5615-c0a7-0a44" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <comment>template_id_413c-9273-4308-b546</comment>
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3125-9ac8-f75d-fe27" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
+          <comment>template_id_bbc4-33fc-4664-a18e    template_targetId_7dee-602c-4b47-be09</comment>
+        </entryLink>
+        <entryLink id="97f7-128f-3ade-3386" name="Retinue" hidden="false" collective="false" import="true" targetId="6307-ed53-0ac4-0212" type="selectionEntryGroup">
+          <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="cf73-2331-3b3e-744c" name="Terminator Saturnine Squad" hidden="false" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_ec78-3ba9-438b-a7e8</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_c111-feb0-4012-98cd</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_63d7-8427-431d-9ae6</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="87e8-8314-9865-f735" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
+          <comment>template_id_e707-fde1-457f-91c4</comment>
+        </categoryLink>
+        <categoryLink id="c6d8-4a33-8fee-e6c2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_ec67-8573-4460-89db</comment>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5551,7 +5672,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2553-9086-4a88-cf9a" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="7165-ae8a-21bd-5d64" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="4fd8-9e1f-ae28-3004" type="selectionEntry">
+                <entryLink id="7165-ae8a-21bd-5d64" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d2-0fc0-61c4-68a1" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de2e-6d04-fc69-8751" type="max"/>
@@ -5594,7 +5715,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e9-bf92-7d7e-60e1" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="5338-609f-e2bf-314d" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="4fd8-9e1f-ae28-3004" type="selectionEntry">
+                <entryLink id="5338-609f-e2bf-314d" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a0-247e-3ac3-6c8d" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a6b-1cfa-847b-771e" type="max"/>
@@ -5824,7 +5945,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d87-7e66-39f5-66d6" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="2c3a-78dd-f2fb-b2d3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="4fd8-9e1f-ae28-3004" type="selectionEntry">
+            <entryLink id="2c3a-78dd-f2fb-b2d3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e5b-78ce-c8b8-dc31" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2a-1ebb-455c-ca3c" type="max"/>
@@ -6157,6 +6278,15 @@ One Sanguinary Guard in a Sanguinary Guard Squad selected as a Retinue Squad may
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Sanguinary Guard Squad" hidden="false" id="b8f0-3401-43ff-bde8" type="selectionEntry" targetId="a333-6047-45c7-8556"/>
+        <entryLink id="8155-2012-d825-16a4" name="Command Squad, Saturnine" hidden="false" collective="false" import="true" targetId="bfb9-7c5c-a0c2-24b3" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4f09-6be3-276d-2756" name="Warlord Traits" hidden="false" collective="false" import="true">

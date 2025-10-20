@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -1457,7 +1457,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="84e0-9ff7-a11d-73d1" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+    <entryLink id="84e0-9ff7-a11d-73d1" name="Saturnine Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <comment>template_id_904a-21a0-43c7-a61c</comment>
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
@@ -3044,6 +3044,90 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180"/>
       </costs>
+    </entryLink>
+    <entryLink import="false" name="Centurion, Saturnine" hidden="false" id="8196-a947-59be-95ae" collective="false" targetId="d677-180a-100f-4385" type="selectionEntry">
+      <comment>template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="2d7a-b8cd-d3d2-3eb8" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="9b17-7d21-a059-cd4d" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="8ae5-1899-8776-158d" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="a870-7ae6-8753-322c" collective="false" targetId="3447-379d-6e6b-6794" type="selectionEntryGroup">
+          <categoryLinks>
+            <categoryLink targetId="4f85-eb33-30c9-8f51" id="66a9-d902-7af0-dd24" primary="false" name="HQ:"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Retinue" hidden="false" id="a5b7-dad0-89da-b705" collective="false" targetId="6590-c91a-fceb-8048" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="35d4-0dcd-f7d2-a6da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Hexagrammaton Choice:" hidden="false" id="7129-1bd9-cafe-1dbf" collective="false" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Praetor, Saturnine" hidden="false" id="7488-3079-800d-0c6b" collective="false" targetId="2c94-9ae0-5fd2-9a28" type="selectionEntry">
+      <comment>template_id_ca44-db38-4377-b4ef</comment>
+      <modifiers>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="01f4-f8ff-bd29-afa6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="8976-6da4-52de-b6b5" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="7794-96ad-dbb5-305b" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="e507-2766-8b46-a46c" collective="false" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Retinue" hidden="false" id="6fb9-66ce-a36d-cace" collective="false" targetId="6590-c91a-fceb-8048" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="true" id="3946-c242-2988-6d50" collective="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_47ce-b432-4b4a-98da</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="4ca1-b02c-e2c7-5f09" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="06cc-c559-d71e-b75e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="83ef-0ff0-23d3-8838" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="501e-0445-465b-61f7" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="f82a-93cd-1707-cb84" collective="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_ec78-3ba9-438b-a7e8</comment>
+      <modifiers>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="3c7d-b75e-deb3-d449" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="1a87-1e48-043d-c3f1" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>

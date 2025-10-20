@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -1526,7 +1526,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="eb80-0c80-2a5d-444d" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+    <entryLink id="eb80-0c80-2a5d-444d" name="Saturnine Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <comment>template_id_904a-21a0-43c7-a61c</comment>
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
@@ -3351,6 +3351,137 @@
     <entryLink import="false" name="Optae" hidden="false" id="d383-3903-5420-7ad4" type="selectionEntry" targetId="5585-b5f3-4640-894b">
       <entryLinks>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="b2a0-9c60-a4f1-2839" type="selectionEntryGroup" targetId="4ef8-ecc8-b821-c604"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="2333-82a4-fd57-c632" name="Terminator Saturnine Squad" hidden="true" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_47ce-b432-4b4a-98da</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_eafb-5453-4dd9-8623</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_41ad-3585-4031-9b76</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1213-6590-fd15-f198" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="10f2-4ecc-f6be-7bc1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fca5-4dbe-61d7-2c28" name="Centurion, Saturnine" hidden="false" collective="false" import="false" targetId="d677-180a-100f-4385" type="selectionEntry">
+      <comment>template_id_11b1-c617-441a-9f1a</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4b73-53ff-5071-fcf0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_bd6a-0cda-4e0f-80ae</comment>
+        </categoryLink>
+        <categoryLink id="208e-33b2-f7cc-d863" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_ae75-7cca-4701-9d56</comment>
+        </categoryLink>
+        <categoryLink id="51b1-231a-28f5-8230" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <comment>template_id_e517-62d4-48f7-8174</comment>
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9891-0365-7e3b-1d61" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup">
+          <comment>template_id_fafb-6414-474a-8a09    template_targetId_7dee-602c-4b47-be09</comment>
+        </entryLink>
+        <entryLink id="9947-87f4-996d-fd6e" name="Retinue" hidden="false" collective="false" import="true" targetId="ec53-0911-52b7-dafa" type="selectionEntryGroup">
+          <comment>template_id_a6a6-9bc7-4d4e-86a7    template_targetId_be38-a066-4f8e-ae54</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <comment>node_id_1e43-c980-4508-8ec2</comment>
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                  <comment>node_id_4140-36a7-4203-b5e9</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="ee7f-e532-a50c-d880" name="Praetor, Saturnine" hidden="false" collective="false" import="false" targetId="2c94-9ae0-5fd2-9a28" type="selectionEntry">
+      <comment>template_id_ca44-db38-4377-b4ef</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_54a4-6ec8-4c61-9c3e</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_f7fd-2d16-4603-a065</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9ddc-c606-2748-d4a3" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_c0ac-4b8c-421c-a21b</comment>
+        </categoryLink>
+        <categoryLink id="d1fb-0042-6d79-5389" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_8db9-079e-4482-b200</comment>
+        </categoryLink>
+        <categoryLink id="faaf-eb92-e242-7267" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <comment>template_id_413c-9273-4308-b546</comment>
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e73a-7084-7974-0037" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup">
+          <comment>template_id_bbc4-33fc-4664-a18e    template_targetId_7dee-602c-4b47-be09</comment>
+        </entryLink>
+        <entryLink id="3050-69d0-de3d-733d" name="Retinue" hidden="false" collective="false" import="true" targetId="ec53-0911-52b7-dafa" type="selectionEntryGroup">
+          <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="a1d5-7f48-1f85-946f" name="Terminator Saturnine Squad" hidden="false" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+      <comment>template_id_ec78-3ba9-438b-a7e8</comment>
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_c111-feb0-4012-98cd</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>node_id_63d7-8427-431d-9ae6</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b54f-b5cb-aa49-cde0" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
+          <comment>template_id_e707-fde1-457f-91c4</comment>
+        </categoryLink>
+        <categoryLink id="7648-5557-8252-eba5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_ec67-8573-4460-89db</comment>
+        </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="853d-4467-b2b7-3ce4" name="The Awakening Fire - Fear (1)" hidden="true" collective="false" import="true" targetId="34b6-77c4-4929-001c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <comment>node_id_7f87-6d3e-4738-b3ee</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo">
+                  <comment>node_id_cd74-309d-4d08-825e</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
   </entryLinks>
@@ -5190,6 +5321,29 @@
           </modifiers>
           <entryLinks>
             <entryLink id="021c-1735-d4ac-3202" name="The Awakening Fire - Fear (1)" hidden="true" collective="false" import="true" targetId="34b6-77c4-4929-001c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <comment>node_id_7f87-6d3e-4738-b3ee</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo">
+                      <comment>node_id_cd74-309d-4d08-825e</comment>
+                    </condition>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="7128-67ef-36ec-7752" name="Command Squad, Saturnine" hidden="false" collective="false" import="true" targetId="bfb9-7c5c-a0c2-24b3" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="5fbc-c45d-af34-48fb" name="The Awakening Fire - Fear (1)" hidden="true" collective="false" import="true" targetId="34b6-77c4-4929-001c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <comment>node_id_7f87-6d3e-4738-b3ee</comment>

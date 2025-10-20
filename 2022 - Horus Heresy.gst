@@ -11196,7 +11196,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="7986-dcaf-35e1-6404" name="Saturnine War Axe" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b27f-4702-5b6a-9775" name="Saturine War Axe" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="b27f-4702-5b6a-9775" name="Saturnine War Axe" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -11214,7 +11214,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="90b9-a836-f9d4-5cf0" name="Saturine Disruption Fist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="90b9-a836-f9d4-5cf0" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2a3e-0dda-aebc-6df7" name="Saturnine Disruption Fist" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
