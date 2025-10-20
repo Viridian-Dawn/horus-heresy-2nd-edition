@@ -11258,17 +11258,6 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2c94-9ae0-5fd2-9a28" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="4751-19e1-b753-2e95" name="Inversion Beamer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
