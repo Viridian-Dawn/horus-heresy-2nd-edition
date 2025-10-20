@@ -2766,7 +2766,7 @@
         <categoryLink id="10f3-216b-9101-8704" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b113-e149-4c1b-ad2b" name="Terminator Saturnine Squad" hidden="true" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
+    <entryLink id="b113-e149-4c1b-ad2b" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
       <comment>template_id_47ce-b432-4b4a-98da</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -3245,7 +3245,7 @@
         <categoryLink id="2e19-3d2d-5c1e-61c1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a248-6265-3b32-70e3" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+    <entryLink id="a248-6265-3b32-70e3" name="Terminator Saturnine Squad" hidden="false" collective="false" import="false" targetId="106e-17a8-0d2c-5ac9" type="selectionEntry">
       <comment>template_id_ec78-3ba9-438b-a7e8</comment>
       <modifiers>
         <modifier type="append" field="name" value="(Reserve Only)">
