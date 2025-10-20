@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022) - Viridian&apos;s Saturnine Addition" revision="130" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022) Viridians Saturnine Addition" revision="1" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -8879,15 +8879,6 @@ A. No.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4fd8-9e1f-ae28-3004" name="Frag Grenades" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="d340-25a1-93b6-b0bd" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
-        <infoLink id="c3d1-dc02-772b-c0e4" name="Frag Grenades" targetId="ccc0-4896-212b-4d53" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6b5f-d62d-7568-38b6" name="Hand Flamer" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c38c-f948-529a-1088" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
@@ -11249,7 +11240,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Concussive (1), Unweildy, Two-Handed</characteristic>
           </characteristics>
         </profile>
@@ -11445,9 +11436,9 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f28e-e9c1-6d12-fe39" name="Occullix Targeting Auspex" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f28e-e9c1-6d12-fe39" name="Occulix Targeting Auspex" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f6ee-a937-3692-4009" name="Occullix Targeting Auspex" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="f6ee-a937-3692-4009" name="Occulix Targeting Auspex" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a Model with an occulix targeting ausepx is selected to make a Shooting Attack, if that Model’s Unit remained Stationary in the Controlling Player’s previous Movement Phase, that Model gains the Firing Protocols (2) Special Rule until the Shooting Attack is fully resolved.</characteristic>
           </characteristics>
@@ -11459,6 +11450,10 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a365-ee0d-c0c6-63ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94b9-5367-cc24-b279" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="583f-2f8b-8178-e7dd" name="Thermal Diffraction Field" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -11474,6 +11469,10 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa4-feed-46b2-d1e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aea5-a105-897e-285b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f710-ab5a-5ba9-02b7" name="Saturnine Teleportation Transponder" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
