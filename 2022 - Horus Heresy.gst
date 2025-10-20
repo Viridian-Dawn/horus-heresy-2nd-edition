@@ -11099,13 +11099,17 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Breaching (4+), Gets Hot</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Breaching (4+), Barrage, Gets Hot</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Blast" id="9a4d-b432-2ef3-0980" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-            <infoLink name="Breaching (X)" id="78ac-ea06-9724-832a" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink name="Breaching (X)" id="78ac-ea06-9724-832a" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" value="Breaching (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Barrage" id="5e7d-fb74-8c5a-eb54" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
             <infoLink name="Gets Hot" id="1aba-9348-9280-ac0b" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
           </infoLinks>
@@ -11129,7 +11133,11 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="57f3-cc9b-f00b-d8ad" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink id="57f3-cc9b-f00b-d8ad" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" value="Breaching (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11153,13 +11161,17 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Breaching (4+)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Barrage</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Blast" id="9e92-2a8b-68b2-23ba" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-            <infoLink name="Breaching (X)" id="f0cf-e748-9fee-6495" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink name="Breaching (X)" id="f0cf-e748-9fee-6495" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" value="Breaching (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
             <infoLink name="Barrage" id="af90-dd32-ef74-1f3d" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
             <infoLink name="Gets Hot" id="ea65-0465-868b-31b7" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
           </infoLinks>
@@ -11183,7 +11195,11 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="9e94-8b0f-83b8-8f74" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+            <infoLink id="9e94-8b0f-83b8-8f74" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" value="Breaching (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11269,7 +11285,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="4751-19e1-b753-2e95" name="Inversion Beamer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3cf6-4abb-6c61-a709" name="Inversion Beamer" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="3cf6-4abb-6c61-a709" name="Inversion Beamer (1)" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">Less than 15&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -11277,7 +11293,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Brutal (2)</characteristic>
           </characteristics>
         </profile>
-        <profile id="267d-ccbe-ed1d-0b55" name="Inversion Beamer" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="267d-ccbe-ed1d-0b55" name="Inversion Beamer (2)" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;-30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -11328,7 +11344,11 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a48d-712f-db46-5bce" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+        <infoLink id="a48d-712f-db46-5bce" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11371,9 +11391,9 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a496-62ff-89cb-ab36" name="Graviton Pulveriser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a496-62ff-89cb-ab36" name="Graviton Pulverizer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1c54-f1d7-7469-34fb" name="Graviton Pulveriser" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="1c54-f1d7-7469-34fb" name="Graviton Pulverizer" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -11404,7 +11424,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Gets Hot, Instant Death, Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Twin-Linked, Instant Death, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11424,7 +11444,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Gets Hot, Instant Death, Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-Linked, Instant Death, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11464,9 +11484,6 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Feel No Pain (X)" id="04e4-72bb-2b3e-c246" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -11492,13 +11509,12 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="5ba4-0977-3d11-d3a8" name="Twin Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5b4d-d2a5-2011-4105" name="Twin Accelerator Autcannon" publicationId="362e-0e76-ce51-c905" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="5b4d-d2a5-2011-4105" name="Twin Accelerator Autcannon" publicationId="362e-0e76-ce51-c905" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;
-</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Exoshock (6+), Rending (5+), Skyfire, Twin-linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-linked, Rending (5+), Exoshock (6+), Skyfire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -18097,7 +18113,11 @@ For example, a unit that is forced to take a Pinning test by an attack made usin
 Wounds from Precision Strikes are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as that model is engaged in combat with the attacking model’s unit, rather than following the normal rules for Wound allocation.</description>
     </rule>
     <rule id="5a93-13e0-809d-782a" name="Power of the Machine Spirit" publicationId="e77a-823a-da94-16b9" page="244" hidden="false">
-      <description>A Vehicle with this special rule may attack different targets with each Ranged weapon it is permitted to fire during any Shooting Attack.</description>
+      <description>Sentry Gun
+Lacking the complexity of true automata, these stationary units are set in place by other forces, their simple cogitators maintaining their unthinking vigil until relocated or destroyed.
+• A unit that includes one or more models with this special rule may not Run, declare or otherwise make Charge moves and may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
+• A unit that contains one or more models with this special rule may never be joined by any other models.
+• A unit that includes one or more models with this special rule may never hold or deny an Objective.</description>
     </rule>
     <rule id="cd2a-0a2b-315e-d39a" name="Slow Vehicles" publicationId="e77a-823a-da94-16b9" page="214" hidden="false">
       <description>When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves, other than to pivot in place, it is always considered to have moved at Cruising Speed regardless of how many inches it moves.</description>
