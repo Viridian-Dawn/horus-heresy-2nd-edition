@@ -3132,6 +3132,33 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Leviathan Dreadnought Talon" hidden="false" id="21ee-7fda-678a-c58c" collective="false" targetId="be88-817f-2c2e-5f1d" type="selectionEntry">
+      <comment>template_id_904a-21a0-43c7-a61c</comment>
+      <modifiers>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <comment>node_id_e3bc-02f8-4ece-a5ea</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_c371-76d9-4a4d-bc00</comment>
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_b4c6-d4ba-4b2e-9b99</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="f289-c1a2-0188-bb34" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="32f4-6c9b-9eab-a33b" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a35d-8563-eb47-e985" name="Roboute Guilliman" hidden="false" collective="false" import="true" type="unit">
