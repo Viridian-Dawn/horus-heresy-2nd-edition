@@ -2153,6 +2153,13 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         <categoryLink name="Unit:" hidden="false" id="2a07-9f7a-3b56-f7e9" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Leviathan Dreadnought Talon" hidden="false" id="aa31-0b5f-b319-22fa" collective="false" targetId="be88-817f-2c2e-5f1d" type="selectionEntry">
+      <comment>template_id_904a-21a0-43c7-a61c</comment>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="1a70-c1cf-776f-4e6c" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="b922-0054-0dd1-3e5a" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="efcb-808e-1ce0-2a87" targetId="6393-649c-7213-a327" importRootEntries="true"/>
